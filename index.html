@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AAI FOODS|Ecommerce</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol
+        id="search"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+      >
+        <title>Search</title>
+        <path
+          fill="currentColor"
+          d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z"
+        />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 16 16">
+        <path
+          d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+        />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+        />
+      </symbol>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="chevron-left"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+        />
+      </svg>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="chevron-right"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="cart-outline"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="quality"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"
+        />
+        <path
+          d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="price-tag"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"
+        />
+        <path
+          d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="shield-plus"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+        />
+        <path
+          d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="star-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="star-empty"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="star-half"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"
+        />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="quote" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="m15 17l2-4h-4V6h7v7l-2 4h-3Zm-9 0l2-4H4V6h7v7l-2 4H6Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="facebook"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="youtube"
+        viewBox="0 0 32 32"
+      >
+        <path
+          fill="currentColor"
+          d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="twitter"
+        viewBox="0 0 256 256"
+      >
+        <path
+          fill="currentColor"
+          d="m245.66 77.66l-29.9 29.9C209.72 177.58 150.67 232 80 232c-14.52 0-26.49-2.3-35.58-6.84c-7.33-3.67-10.33-7.6-11.08-8.72a8 8 0 0 1 3.85-11.93c.26-.1 24.24-9.31 39.47-26.84a110.93 110.93 0 0 1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8 8 0 0 1 13.65-4.92c.35.35 33.28 33.1 73.54 43.72V88a47.87 47.87 0 0 1 14.36-34.3A46.87 46.87 0 0 1 168.1 40a48.66 48.66 0 0 1 41.47 24H240a8 8 0 0 1 5.66 13.66Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="instagram"
+        viewBox="0 0 256 256"
+      >
+        <path
+          fill="currentColor"
+          d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="linkedin"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="nav-icon"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"
+        />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="navbar-icon"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="search-popup">
+      <div class="search-popup-container">
+        <form role="search" method="get" class="search-form" action="">
+          <input
+            type="search"
+            id="search-form"
+            class="search-field"
+            placeholder="Type and press enter"
+            value=""
+            name="s"
+          />
+          <button type="submit" class="search-submit">
+            <svg class="search"><use xlink:href="#search"></use></svg>
+          </button>
+        </form>
+
+        <h5 class="cat-list-title">Browse Categories</h5>
+
+        <ul class="cat-list">
+          <li class="cat-list-item">
+            <a href="#" title="DIWALI SPCECIAL">DIWALI SPCECIAL</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="#" title="GULABJAMUN">GULABJAMUN</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="#" title="RASGULLA">RASGULLA</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="#" title="SHEV">SHEV</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+
+    <header
+      id="header"
+      class="site-header header-scrolled position-fixed text-black bg-light"
+    >
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+        <div class="container-fluid">
+          <div class="head-name">AAI FOODS</div>
+          <button
+            class="navbar-toggler d-flex d-lg-none order-3 p-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#bdNavbar"
+            aria-controls="bdNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg class="navbar-icon">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="bdNavbar"
+            aria-labelledby="bdNavbarOffcanvasLabel"
+          >
+            <div class="offcanvas-header px-4 pb-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/main-logo.png" class="logo" />
+              </a>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                data-bs-target="#bdNavbar"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                id="navbar"
+                class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link me-4 active" href="#billboard">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#company-services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#mobile-products"> ITEMS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#smart-watches">SPECIAL DISHES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#latest-blog">REVIEW</a>
+                </li>
+               
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="user-items ps-5">
+                    <ul class="d-flex justify-content-end list-unstyled">
+                      <li class="search-item pe-3">
+                        <a href="#" class="search-button">
+                          <svg class="search">
+                            <use xlink:href="#search"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="pe-3">
+                        <a href="#">
+                          <svg class="user">
+                            <use xlink:href="#user"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="cart.html">
+                          <svg class="cart">
+                            <use xlink:href="#cart"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+   <section>
+      <div class="intro-head">
+        <div class="left-content">100% TASTE GUARANTED
+          <p class="intro-para">Welcome to Flavor Haven, where culinary dreams come alive! Discover a world of delectable dishes, from gourmet creations to comfort classics. Explore our diverse menu, crafted to satisfy every palate. Bon appétit!</p>
+        </div>
+
+        <div class="right-content">
+          <img src="images/intro.png" alt="" class="intro-img" />
+        </div>
+      </div>
+    </section>
+    <section id="company-services" class="padding-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="cart-outline">
+                  <use xlink:href="#cart-outline" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">
+                  Free delivery
+                </h3>
+                <p>We deliver the product within 24hrs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="quality">
+                  <use xlink:href="#quality" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">
+                  Quality guarantee
+                </h3>
+                <p>Fresh item with delicious taste</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="price-tag">
+                  <use xlink:href="#price-tag" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">
+                  10% off
+                </h3>
+                <p>10% off on every product</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex">
+              <div class="icon-box-icon pe-3 pb-3">
+                <svg class="shield-plus">
+                  <use xlink:href="#shield-plus" />
+                </svg>
+              </div>
+              <div class="icon-box-content">
+                <h3 class="card-title text-uppercase text-dark">
+                  100% secure payment
+                </h3>
+                <p>Cash on delivery also available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="mobile-products"
+      class="product-store position-relative padding-large no-padding-top"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">DIWALI SPECIAL</h2>
+            <div class="btn-right">
+            </div>
+          </div>
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://t4.ftcdn.net/jpg/04/68/09/07/360_F_468090768_GgEW060AhrmyQLgbdzM3OKazbExK4izu.jpg"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">SHANKAR-PALI</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 500/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://img.freepik.com/free-photo/murukku-also-known-as-chakli-south-indian-traditional-vegetarian-snack_466689-73247.jpg"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">CHAKLI</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 700/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">KARANJI</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 450/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEBFfbOtP9EVwx-PxAumWDBW4yLw0Ngbzwg&s"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">RAVA LADOO</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 400/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">RAVA LADOO</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 500/kg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute text-center"></div>
+    </section>
+    <section
+      id="smart-watches"
+      class="product-store padding-large position-relative"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">DELICIOUS PLATE</h2>
+            <div class="btn-right">
+            </div>
+          </div>
+          <div class="swiper product-watch-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">GULAB-JAMUN</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 350/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeCUF6Xazfr3kQ3I_Q8J-0EUr6FFH3LHfOIw&s"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">JALEBI</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 200/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-aPw4_a4E8siDT2SyVpi4G_XVT7GX3My9yQ&s"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">ANARSE</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 500/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://5.imimg.com/data5/VX/UI/MY-14124496/shev-500x500.jpg"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">SHEV</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 400/kg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img
+                      src="https://www.ramasrey.com/wp-content/uploads/2018/08/Rasgulla.jpg"
+                      alt="product-item"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="cart-concern position-absolute">
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black"
+                        >Add to Cart<svg class="cart-outline">
+                          <use xlink:href="#cart-outline"></use></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-detail d-flex justify-content-between pt-3">
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">RASGULLA</a>
+                    </h3>
+                    <span class="item-price text-primary">Rs 500/kg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute text-center"></div>
+    </section>
+    <section
+      id="yearly-sale"
+      class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
+      style="
+      background-image: url(https://www.pngall.com/wp-content/uploads/12/Delivery-Scooter-PNG-Clipart.png);
+        background-position: right;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="text-content offset-4 padding-medium">
+            <h3>Fast delivery
+              <h3>100% trustable and hygenic delivery </h3>
+            </h3>
+            <h2 class="display-2 pb-5 text-uppercase text-dark">
+             FREE DELIVERY
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12"></div>
+      </div>
+    </section>
+   
+    <section id="testimonials" class="position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="review-content position-relative">
+            <div
+              class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center"
+            >
+              <svg class="chevron-left">
+                <use xlink:href="#chevron-left" />
+              </svg>
+            </div>
+            <div class="swiper testimonial-swiper">
+              <div class="quotation text-center">
+                <svg class="quote">
+                  <use xlink:href="#quote" />
+                </svg>
+              </div>
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide text-center d-flex justify-content-center"
+                >
+                  <div class="review-item col-md-10">
+                    <h1>CLIENT'S REVIEW</h1>
+                    <i class="icon icon-review"></i>
+                    
+                    <blockquote>
+                      "Flavor Haven transformed our dining experience with exceptional quality and taste. The dishes were beautifully presented and bursting with flavor. Outstanding service and a diverse menu make it a must-visit!"
+                    </blockquote>
+                    <div class="rating">
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-half">
+                        <use xlink:href="#star-half"></use>
+                      </svg>
+                      <svg class="star star-empty">
+                        <use xlink:href="#star-empty"></use>
+                      </svg>
+                    </div>
+                    <div class="author-detail">
+                      <div class="name text-dark text-uppercase pt-2">
+                        Vaibhav Karve
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide text-center d-flex justify-content-center"
+                >
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <h1>CLIENT'S REVIEW</h1>
+                    <blockquote>
+                      Service was flawless—arrived on time, and the food was still hot and fresh. Each dish was perfectly prepared and packed with flavor. Highly recommend for a seamless dining experience!"
+                    </blockquote>
+                    <div class="rating">
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-fill">
+                        <use xlink:href="#star-fill"></use>
+                      </svg>
+                      <svg class="star star-half">
+                        <use xlink:href="#star-half"></use>
+                      </svg>
+                      <svg class="star star-empty">
+                        <use xlink:href="#star-empty"></use>
+                      </svg>
+                    </div>
+                    <div class="author-detail">
+                      <div class="name text-dark text-uppercase pt-2">
+                        Anjali Jadhav
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center"
+            >
+              <svg class="chevron-right">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+  
+   
+    <footer id="footer" class="overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-area">
+            <div class="row d-flex flex-wrap justify-content-between ">
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu">
+                 <div class="head-name" >AAI FOODS</div>
+                  <div class="social-links">
+                    <ul class="d-flex list-unstyled">
+                      <li>
+                        <a href="#">
+                          <svg class="facebook">
+                            <use xlink:href="#facebook" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg class="instagram">
+                            <use xlink:href="#instagram" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg class="twitter">
+                            <use xlink:href="#twitter" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg class="linkedin">
+                            <use xlink:href="#linkedin" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg class="youtube">
+                            <use xlink:href="#youtube" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 pb-3">
+                <div class="footer-menu text-uppercase">
+                  <h5 class="widget-title pb-2">Quick Links</h5>
+                  <ul class="menu-list list-unstyled text-uppercase">
+                    <li class="menu-item pb-2">
+                      <a href="#">Home</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">About</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Shop</a>
+                    </li>
+
+                    <li class="menu-item pb-2">
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu text-uppercase">
+                  <h5 class="widget-title pb-2">Help & Info Help</h5>
+                  <ul class="menu-list list-unstyled">
+                    <li class="menu-item pb-2">
+                      <a href="#">Track Your Order</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Returns Policies</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Shipping + Delivery</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu contact-item">
+                  <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
+                  <p>
+                    Do you have any queries or suggestions?
+                    <a href="mailto:">rohitlbhalekar1812@gmail.com</a>
+                  </p>
+                  <p>
+                    If you need support? Just give us a call.
+                    <a href="">+91 9767272177</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </footer>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-md-4 col-sm-6">
+            <div class="Shipping d-flex">
+              <p>We ship with:</p>
+              <div class="card-wrap ps-2">
+                <img src="images/dhl.png" alt="visa" />
+                <img src="images/shippingcard.png" alt="mastercard" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="payment-method d-flex">
+              <p>Payment options:</p>
+              <div class="card-wrap ps-2">
+                <img src="images/visa.jpg" alt="visa" />
+                <img src="images/mastercard.jpg" alt="mastercard" />
+                <img src="images/paypal.jpg" alt="paypal" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="copyright">
+              <p>
+                © Copyright 2024
+                <h6>Devloped by Rohit Bhalekar</h6>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
